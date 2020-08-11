@@ -42,7 +42,7 @@ public class UsuarioService {
 				String authHeader = "Basic " + new String(encondedAuth);
 				
 				user.get().setToken(authHeader);
-				user.get().setToken(usuario.get().getNome());
+				user.get().setNome(usuario.get().getNome());
 				
 				return user;
 				
